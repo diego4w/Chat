@@ -1,5 +1,4 @@
 # ✒️ Descrição
-Claro, aqui está uma versão melhorada:
 
 Desenvolvi uma aplicação web como parte do meu trabalho na faculdade de Ciências da Computação, para a disciplina de Web 2. Esta aplicação utiliza um servidor WebSocket para enviar mensagens em tempo real. Esta tecnologia não só demonstra o entendimento dos conceitos abordados na disciplina, mas também destaca a capacidade de implementar soluções práticas e inovadoras para problemas do mundo real no campo da web.
 
