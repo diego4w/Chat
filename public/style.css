@@ -9,3 +9,11 @@ form{
     justify-content:center;
     padding: 50px;
 }
+
+.bg-primary{
+    float: right;
+}
+
+.bg-danger{
+    float: left;
+}

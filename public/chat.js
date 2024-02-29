@@ -28,8 +28,11 @@
 
  // Lidar com recebimento de mensagem
  socket.on('mensagem', data => {
+    const isMe = data.name === name;
+    
+    const messageClass = isMe ? 'bg-primary' : 'bg-danger';
     res.innerHTML += `
-    <div class="card bg-danger" style="margin: 10px; width: 400px; color: #fff; float: right;">
+    <div class="card ${messageClass}" style="margin: 10px; width: 400px; color: #fff;">
            <div class="card-body" id="res1">
            <div class="card-header">
             usuario: ${data.name}
@@ -39,6 +42,6 @@
          </div>`
          
     window.scrollTo(0, document.body.scrollHeight);
+    console.log(data);
     console.log(data.msg);
-    console.log(m);
  });

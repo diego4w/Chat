@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
         console.log('Mensagem recebida:', mensagem);
         
         // Enviar a mensagem para todos os clientes, incluindo o remetente
-        io.emit('mensagem', mensagem);
+        io.emit('mensagem',mensagem);
       });
     
       // Lidar com evento de desconexão
