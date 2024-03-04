@@ -31,15 +31,28 @@
     const isMe = data.name === name;
     
     const messageClass = isMe ? 'bg-primary' : 'bg-danger';
-    res.innerHTML += `
+    if (messageClass == "bg-danger"){
+      res.innerHTML += `
     <div id = "card" class="card ${messageClass}">
            <div class="card-body" id="res1">
            <div class="card-header">
-            usuario: ${data.name}
+            ${data.name}
            </div>
              ${data.msg}
            </div>
          </div>`
+    }else{
+      res.innerHTML += `
+    <div id = "card" class="card ${messageClass}">
+           <div class="card-body" id="res1">
+           <div class="card-header">
+            VOCÊ
+           </div>
+             ${data.msg}
+           </div>
+         </div>`
+    }
+    
          
     window.scrollTo(0, document.body.scrollHeight);
     console.log(data);
