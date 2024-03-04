@@ -32,7 +32,7 @@
     
     const messageClass = isMe ? 'bg-primary' : 'bg-danger';
     res.innerHTML += `
-    <div class="card ${messageClass}" style="margin: 10px; width: 400px; color: #fff;">
+    <div id = "card" class="card ${messageClass}">
            <div class="card-body" id="res1">
            <div class="card-header">
             usuario: ${data.name}
